@@ -1,0 +1,46 @@
+from tkinter import *
+import os
+
+x=Tk()
+x.geometry('1280x1024')
+x.configure(bg='light green')
+x.title("Video Games")
+
+def batlle():
+    os.startfile('E:\Sourhead23\Gaems\Battlefield4.lnk')
+    exit()
+def fatcry3():
+    os.startfile('E:\Sourhead23\Gaems\Far.lnk')
+    exit()
+def yakuza():
+    os.startfile('E:\Sourhead23\Gaems\Yakuza0.lnk')
+    exit()
+def metalgear5():
+    os.startfile('E:\Sourhead23\Gaems\MgsGroundZeroes.lnk')
+    exit()
+def Borderlands():
+    os.startfile('E:\Sourhead23\Gaems\Bor.lnk')
+    exit()
+
+
+Battlefield=PhotoImage(file="D:\gaumsesYakuza0\F\y.png")
+borderlands=PhotoImage(file="D:\gaumsesYakuza0\F\der.png")
+Fatcry3=PhotoImage(file="fatc.png")
+#Yak=PhotoImage(file="cash1.png")
+Metal5=PhotoImage(file="D:\gaumsesYakuza0\F\mgs5er.png")
+
+    
+gpa=Button(text="Battlefield 4",image=Battlefield,cursor='circle',compound='top',font=('Calibri',15),fg='black',command=batlle,bg='light green')
+cloud=Button(text="Borderlands",image=borderlands,cursor='circle',compound='top',font=('Calibri',15),fg='black',command=Borderlands,bg='light green')
+co=Button(text="farcry",image=Fatcry3,cursor='circle',compound='top',font=('Calibri',15),fg='black',command=fatcry3,bg='light green')
+mgs=Button(text="METAL GEAR 5: Ground ZERO",image=Metal5,cursor='circle',compound='top',font=('Calibri',15),fg='black',command=metalgear5,bg='light green')
+
+chhose=Label(x,text='Select The Game ☺',font=('Calibri',40,'bold'),bg='light green',fg='white')
+
+chhose.grid(row=0,column=0,columnspan=3,padx='450',pady='20',sticky='N')
+gpa.grid(row=1,column=0,padx=5,pady=15)
+cloud.grid(row=1,column=1,padx=5,pady=15)
+co.grid(row=2,column=0,padx=5,pady=15)
+mgs.grid(row=2,column=1,padx=5,pady=15)
+
+x.mainloop()
